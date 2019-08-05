@@ -6,6 +6,7 @@ git clone https://github.com/GoogleCloudPlatform/appengine-guestbook-python
 Navigate to the source directory:
 
 `cd appengine-guestbook-python`
+
 List the contents of the directory:
 
 `ls -l`
