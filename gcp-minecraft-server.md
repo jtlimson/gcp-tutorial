@@ -20,8 +20,8 @@ In this lab, you learn how to perform the following tasks:
 
 ## Define a VM using advanced options
 
-1. In the GCP Console, on the Navigation menu ( 7a91d354499ac9f1.png), click Compute Engine > VM instances.
-2. Click Create. Don't click the final Create until you have set the SCOPES.
+1. In the GCP Console, on the **Navigation menu**, click `**Compute Engine > VM instances.**`
+2. Click **Create**. Don't click the final **Create** until you have set the **SCOPES.**
 3. Specify the following, and leave the remaining settings as their defaults:
 
 | Property                                |	Value (type value or select option as specified)  |
@@ -48,25 +48,21 @@ In this lab, you learn how to perform the following tasks:
 8. Click **Done.** This creates the disk and automatically attaches it to the VM when the VM is created.
 
 ## Create an External static IP
-1. Click Networking.
+1. Click **Networking.**
 2. Specify the following, and leave the remaining settings as their defaults:
 
-Property	Value (type value or select option as specified)
-Networks tags	minecraft-server
-Network interfaces	Click default to edit the interface
-External IP	Create IP Address
-Name	mc-server-ip
+
 | Property                                | Value (type value or select option as specified) |
 |---                                      |---                                               |
 | Networks tags	                          | minecraft-server                                 |
-| Network interfaces	                    | Click default to edit the interface              |
+| Network interfaces	                  | Click default to edit the interface              |
 | External IP                             | Create IP Address                                |
 | Name                                    | mc-server-ip                                     |
 | Encryption                              | Google-managed key                               |
 
-3. Click Reserve.
-4. Click Done.
-5. Click Create.
+3. Click **Reserve.**
+4. Click **Done.**
+5. Click **Create.**
 
 # Task 2: Prepare the data disk
 
@@ -74,7 +70,7 @@ Name	mc-server-ip
 
 The disk is attached to the instance, but it is not yet mounted or formatted.
 
-1. For mc-server, click SSH to open a terminal and connect.
+1. For **mc-server,** click **SSH** to open a terminal and connect.
 
 2. To create a directory that serves as the mount point for the data disk, run the following command:
 
@@ -88,9 +84,10 @@ lazy_journal_init=0,discard \
 /dev/disk/by-id/google-minecraft-disk
 ```
 
-Result (do not copy; this is example output):
+Result (**do not copy; this is example output**):
 
 ```
+
 Result (**do not copy; this is example output**):mke2fs 1.42.12 (29-Aug-2014)
 Discarding device blocks: done
 Creating filesystem with 13107200 4k blocks and 3276800 inodes
@@ -102,7 +99,9 @@ Allocating group tables: done
 Writing inode tables: done
 Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
+
 ```
+
 4. To mount the disk, run the following command:
 
 `sudo mount -o discard,defaults /dev/disk/by-id/google-minecraft-disk /home/minecraft`
@@ -115,7 +114,7 @@ The Minecraft server runs on top of the Java Virtual Machine (JVM), so it requir
 
 ### Install the Java Runtime Environment (JRE) and the Minecraft server
 
-1. In the SSH terminal for mc-server, to update the Debian repositories on the VM, run the following command:
+1. In the SSH terminal for **mc-server**, to update the Debian repositories on the VM, run the following command:
 
 `sudo apt-get update`
 
