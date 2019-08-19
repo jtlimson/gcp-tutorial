@@ -1,4 +1,4 @@
-## Start a Kubernetes Engine cluster
+## Starting a Kubernetes Engine cluster
 On the Google Cloud Platform menu, click Activate Cloud Shell (). If a dialog box appears, click Start Cloud Shell.
 
 For convenience, place the zone that Qwiklabs assigned you to into an environment variable called MY_ZONE. At the Cloud Shell prompt, type this partial command:
