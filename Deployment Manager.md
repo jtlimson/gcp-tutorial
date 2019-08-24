@@ -1,4 +1,4 @@
-
+# How-to get the parameter of the provided YAML file below
 
 ```YAML
 resources:
