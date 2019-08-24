@@ -49,13 +49,15 @@ resources:
   
     `gcloud compute images list`
     
-    `gcloud compute images list | grep debian` narrowing the search
+  narrowing the search
     
-    get the uri of the image from the desired image 
+    `gcloud compute images list | grep debian`  
+    
+  get the uri of the image from the desired image 
     
     `gcloud compute images list --uri | grep debian`
     
-    copy and paste the desired image uri to the `sourceImage`
+  copy and paste the desired image uri to the `sourceImage`
     
     
   
